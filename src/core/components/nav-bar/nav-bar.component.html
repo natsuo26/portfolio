@@ -1,8 +1,10 @@
 <div class="nav-bar">
   <ul class="nav-bar-list">
-    <li>Home</li>
-    <li>About</li>
-    <li>Projects</li>
-    <li>Contacts</li>
+    <li routerLink="/home" [ngClass]="{ active: activeRoute === '/home' }">
+      Home
+    </li>
+    <li routerLink="/about">About</li>
+    <li routerLink="/projects">Projects</li>
+    <li routerlink="/contact">Contact</li>
   </ul>
 </div>
