@@ -1,10 +1,30 @@
-<div class="nav-bar">
+<nav class="nav-bar">
   <ul class="nav-bar-list">
-    <li routerLink="/home" [ngClass]="{ active: activeRoute === '/home' }">
-      Home
-    </li>
-    <li routerLink="/about">About</li>
-    <li routerLink="/projects">Projects</li>
-    <li routerlink="/contact">Contact</li>
+    <a
+      routerLink="/home"
+      routerLinkActive="active"
+      [ngClass]="{ active: activeRoute === '/home' }"
+      ><li>Home</li></a
+    >
+    <a
+      routerLink="/about"
+      routerLinkActive="active"
+      [ngClass]="{ active: activeRoute === '/about' }"
+      ><li>About</li></a
+    >
+
+    <a
+      routerLink="/projects"
+      routerLinkActive="active"
+      [ngClass]="{ active: activeRoute === '/projects' }"
+      ><li>Projects</li></a
+    >
+
+    <a
+      routerLink="/contact"
+      routerLinkActive="active"
+      [ngClass]="{ active: activeRoute === '/contact' }"
+      ><li>Contact</li></a
+    >
   </ul>
-</div>
+</nav>
